@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = 'author' content="pranavarsh"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- <link rel="icon" href="data:image/png;base64,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"> -->
+</head>
+<body>
+    <nav>
+        <a href="/">
+            <img src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/78dbd1a43af24c48a5bc7ba17d4cb2dc.png"
+                alt="spotify-logo" />
+        </a>
+        <ul>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Premium</a>
+            </li>
+            <li>
+                <a href="#">Download</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="download">
+        <h1>Introducing Premium Mini</h1>
+        <h2>₹7 for 1 day. ₹25 for 1 week.</h2>
+        <section>
+            <button>
+                <i class="fa-brands fa-google-play fa-xl"></i>
+                DOWNLOAD
+            </button>
+            <button>
+                <i class="fa-brands fa-apple fa-xl"></i>
+                DOWNLOAD
+            </button>
+        </section>
+    </main>
+    <section id="difference-table">
+        <h1>Experience the difference</h1>
+        <table>
+            <tr>
+                <th>What you get</th>
+                <th>Premium Plan</th>
+                <th>Free Plan</th>
+            </tr>
+            <tr>
+                <td>Access to all audio content</td>
+                <td><i class="fa-regular fa-circle-check"></i></td>
+                <td><i class="fa-regular fa-circle-check"></i></td>
+            </tr>
+            <tr>
+                <td>Ad-free music listening</td>
+                <td><i class="fa-regular fa-circle-check"></i></td>
+                <td><i class="fa-regular fa-circle-xmark"></i></td>
+            </tr>
+            <tr>
+                <td>Enhanced playlists</td>
+                <td><i class="fa-regular fa-circle-check"></i></td>
+                <td><i class="fa-regular fa-circle-xmark"></i></td>
+            </tr>
+            <tr>
+                <td>Download songs</td>
+                <td><i class="fa-regular fa-circle-check"></i></td>
+                <td><i class="fa-regular fa-circle-xmark"></i></td>
+            </tr>
+            <tr>
+                <td>Group sessions</td>
+                <td><i class="fa-regular fa-circle-check"></i></td>
+                <td><i class="fa-regular fa-circle-xmark"></i></td>
+            </tr>
+            <tr>
+                <td>Highest audio quality</td>
+                <td><i class="fa-regular fa-circle-check"></i></td>
+                <td><i class="fa-regular fa-circle-xmark"></i></td>
+            </tr>
+        </table>
+        <section>
+            <h1>Get 3 months of Premium for free.</h1>
+            <button>GET 3 MONTHS FOR ₹0</button>
+        </section>
+    </section>
+    <section id="premium">
+        <section>
+            <h2>Pick your Premium</h2>
+            <p>Listen without limits on your phone, speaker, and other devices.</p>
+        </section>
+        <section class="price-cards">
+            <article>
+                <section class="card-header">
+                    <span>One-time plans available</span>
+                    <h3>Mini</h3>
+                    <p>From ₹7/day</p>
+                    <p>1 account</p>
+                </section>
+                <section class="card-body">
+                    <ol>
+                        <li>Ad-free music listening on mobile</li>
+                        <li>Group Session</li>
+                        <li>Download 30 songs on 1 mobile device</li>
+                    </ol>
+                    <button>VIEW PLANS</button>
+                </section>
+            </article>
+            <article>
+                <section class="card-header">
+                    <span>3 months free</span>
+                    <span>One-time plans available</span>
+                    <h3>Individual</h3>
+                    <p>₹119/month after offer period</p>
+                    <p>1 account</p>
+                </section>
+                <section class="card-body">
+                    <ol>
+                        <li>Ad-free music listening</li>
+                        <li>Group Session</li>
+                        <li>Download 10k songs/device on 5 devices</li>
+                    </ol>
+                    <button>VIEW PLANS</button>
+                </section>
+            </article>
+            <article>
+                <section class="card-header">
+                    <span>1 months free</span>
+                    <span>One-time plans available</span>
+                    <h3>Duo</h3>
+                    <p>₹149/month after offer period</p>    
+                    <p>2 accounts</p>
+                </section>
+                <section class="card-body">
+                    <ol>
+                        <li>For couples who live together</li>
+                        <li>Ad-free music listening on mobile</li>
+                        <li>Group Session</li>
+                        <li>Download 10k songs/devices, on 5 device per account</li>
+                    </ol>
+                    <button>VIEW PLANS</button>
+                </section>
+            </article>
+            <article>
+                <section class="card-header">
+                    <span>1 months free</span>
+                    <span>One-time plans available</span>
+                    <h3>Family</h3>
+                    <p>₹179/month after offer period</p>
+                    <p>Up to 6 accounts</p>
+                </section>
+                <section class="card-body">
+                    <ol>
+                        <li>For family who live together</li>
+                        <li>Block explicit music</li>
+                        <li>Ad-free music listening on mobile</li>
+                        <li>Group Session</li>
+                        <li>Download 10k songs/device, on 5 devices</li>
+                    </ol>
+                    <button>VIEW PLANS</button>
+                </section>
+            </article>
+        </section>
+    </section>
+    <section id="students-offer">
+        <h3>Special discount for eligible students in university</h3>
+        <button>LEARN MORE</button>
+        <form>
+            <input type="email" name="email" id="email" placeholder="Email address" required autocomplete="off" />
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" required required
+                autocomplete="off" />
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" required required
+                autocomplete="off" />
+            <p>Where do you go to school?</p>
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="india">India</option>
+                <option value="spain">Spain</option>
+                <option value="germany">Germany</option>
+                <option value="japan">Japan</option>
+                <option value="france">France</option>
+            </select>
+            <label for="college-university">Name of college/ university</label>
+            <select name="college-university" id="college-university" required>
+                <option value="indian-school-business">Indian School of Business</option>
+                <option value="delhi-university">Delhi University</option>
+                <option value="iit">IIT</option>
+                <option value="bits">BITS</option>
+                <option value="imi">IMI</option>
+            </select>
+            <label for="contact-number">Contact Number</label>
+            <input type="number" name="contact-number" id="contact-number" placeholder="Contact Number" required
+                autocomplete="off" />
+            <input type="checkbox" name="consent-checkbox" id="consent-checkbox" required />
+            <span>By checking this box and clicking "Submit", you consent to use information for verification.</span>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </section>
+    <footer id="contact">
+        <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <p>© Copyright 2022 Spotify</p>
+    </footer>
+</body>
+</html>
+
+
+
+
